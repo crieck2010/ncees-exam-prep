@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fs-exam-prep"
+version = "1.0.0"
+description = "Parameterized FS exam question-bank engine: seeded, reproducible practice-question generators for all 7 NCEES FS knowledge areas, with a versioned JSON question schema consumed by thin quiz UIs (CLI today, Flutter app tomorrow)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "crieck2010" }]
+keywords = ["surveying", "fs-exam", "ncees", "question-bank", "quiz", "education"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Education",
+    "Topic :: Education :: Testing",
+    "Topic :: Scientific/Engineering",
+]
+# Engine core is stdlib-only on purpose: no numpy, no network, no UI imports.
+# Thin UIs (CLI, Streamlit, Flutter) consume versioned JSON question banks.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+fs-quiz = "fs_quiz.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/crieck2010/fs-exam-prep"
+Repository = "https://github.com/crieck2010/fs-exam-prep"
+Issues = "https://github.com/crieck2010/fs-exam-prep/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,2072 @@
+{
+ "engine_version": "1.0.0",
+ "generator": "fs-exam-prep",
+ "question_count": 96,
+ "questions": [
+  {
+   "answer_index": 1,
+   "choices": [
+    "95%",
+    "99.7%",
+    "68%",
+    "50%"
+   ],
+   "difficulty": 1,
+   "domain": "applied-math-statistics",
+   "explanation": "\u00b10.294 ft is \u00b13\u03c3. The 68\u201395\u201399.7 rule: \u00b11\u03c3 \u2192 68%, \u00b12\u03c3 \u2192 95%, \u00b13\u03c3 \u2192 99.7%.",
+   "parameters": {
+    "k": 3,
+    "sigma": 0.09798820683137703
+   },
+   "qid": "9cd3be2f7d0d",
+   "schema_version": 1,
+   "seed": 776431820,
+   "stem": "Measurement errors are normally distributed with standard deviation \u03c3 = 0.098 ft. About what percentage of measurements fall within \u00b10.294 ft of the mean?",
+   "topic": "confidence-intervals"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "50%",
+    "95%",
+    "68%",
+    "99.7%"
+   ],
+   "difficulty": 1,
+   "domain": "applied-math-statistics",
+   "explanation": "\u00b10.069 ft is \u00b11\u03c3. The 68\u201395\u201399.7 rule: \u00b11\u03c3 \u2192 68%, \u00b12\u03c3 \u2192 95%, \u00b13\u03c3 \u2192 99.7%.",
+   "parameters": {
+    "k": 1,
+    "sigma": 0.068592411189472
+   },
+   "qid": "5a1d8423d635",
+   "schema_version": 1,
+   "seed": 156031883,
+   "stem": "Measurement errors are normally distributed with standard deviation \u03c3 = 0.069 ft. About what percentage of measurements fall within \u00b10.069 ft of the mean?",
+   "topic": "confidence-intervals"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "359.64 ft",
+    "322.32 ft",
+    "103890.46 ft",
+    "481.51 ft"
+   ],
+   "difficulty": 2,
+   "domain": "applied-math-statistics",
+   "explanation": "c\u00b2 = a\u00b2 + b\u00b2 \u2212 2ab\u00b7cos C = 259.33\u00b2 + 222.18\u00b2 \u2212 2(259.33)(222.18)cos(83.66\u00b0); c = 322.32 ft.",
+   "parameters": {
+    "C": 83.65931929972642,
+    "a": 259.33468919415077,
+    "b": 222.17718156217802
+   },
+   "qid": "1b78e79ea9e4",
+   "schema_version": 1,
+   "seed": 1167530141,
+   "stem": "In triangle ABC, side a = 259.33 ft, side b = 222.18 ft, and the included angle C = 83.66\u00b0. What is the length of side c?",
+   "topic": "law-of-cosines"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "442.91 ft",
+    "209.90 ft",
+    "392.76 ft",
+    "44056.24 ft"
+   ],
+   "difficulty": 2,
+   "domain": "applied-math-statistics",
+   "explanation": "c\u00b2 = a\u00b2 + b\u00b2 \u2212 2ab\u00b7cos C = 198.25\u00b2 + 244.65\u00b2 \u2212 2(198.25)(244.65)cos(55.39\u00b0); c = 209.90 ft.",
+   "parameters": {
+    "C": 55.38644896618872,
+    "a": 198.2516089774202,
+    "b": 244.6545753662959
+   },
+   "qid": "2e371f643869",
+   "schema_version": 1,
+   "seed": 1808589292,
+   "stem": "In triangle ABC, side a = 198.25 ft, side b = 244.65 ft, and the included angle C = 55.39\u00b0. What is the length of side c?",
+   "topic": "law-of-cosines"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "227.33 ft",
+    "52.02 ft",
+    "340.61 ft",
+    "112.81 ft"
+   ],
+   "difficulty": 2,
+   "domain": "applied-math-statistics",
+   "explanation": "b / sin B = a / sin A \u2192 b = 278.27 \u00d7 sin(75.65\u00b0) / sin(52.33\u00b0) = 340.61 ft.",
+   "parameters": {
+    "A": 52.32504268173565,
+    "B": 75.65353046822803,
+    "a": 278.2662140026913
+   },
+   "qid": "350333ed140d",
+   "schema_version": 1,
+   "seed": 1074443666,
+   "stem": "In triangle ABC, angle A = 52.33\u00b0, angle B = 75.65\u00b0, and side a = 278.27 ft. What is the length of side b?",
+   "topic": "law-of-sines"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "46.17 ft",
+    "276.92 ft",
+    "332.68 ft",
+    "360.77 ft"
+   ],
+   "difficulty": 2,
+   "domain": "applied-math-statistics",
+   "explanation": "b / sin B = a / sin A \u2192 b = 346.44 \u00d7 sin(69.64\u00b0) / sin(64.19\u00b0) = 360.77 ft.",
+   "parameters": {
+    "A": 64.19285754050816,
+    "B": 69.63645648959783,
+    "a": 346.44181325974563
+   },
+   "qid": "9aeb20082212",
+   "schema_version": 1,
+   "seed": 628420773,
+   "stem": "In triangle ABC, angle A = 64.19\u00b0, angle B = 69.64\u00b0, and side a = 346.44 ft. What is the length of side b?",
+   "topic": "law-of-sines"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "difficulty": 1,
+   "domain": "applied-math-statistics",
+   "explanation": "In 0.0007060: leading zeros are never significant; captive zeros are; trailing zeros are significant only with a decimal point. Count = 4.",
+   "parameters": {
+    "count": 4,
+    "number": "0.0007060"
+   },
+   "qid": "466a0f5604c4",
+   "schema_version": 1,
+   "seed": 1081573033,
+   "stem": "How many significant figures are in 0.0007060?",
+   "topic": "significant-figures"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "4",
+    "3",
+    "6",
+    "5"
+   ],
+   "difficulty": 1,
+   "domain": "applied-math-statistics",
+   "explanation": "In 2500.: leading zeros are never significant; captive zeros are; trailing zeros are significant only with a decimal point. Count = 4.",
+   "parameters": {
+    "count": 4,
+    "number": "2500."
+   },
+   "qid": "f2536faaf6b0",
+   "schema_version": 1,
+   "seed": 1137278891,
+   "stem": "How many significant figures are in 2500.?",
+   "topic": "significant-figures"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "0.2474 ft",
+    "0.0275 ft",
+    "0.082 ft",
+    "0.0092 ft"
+   ],
+   "difficulty": 2,
+   "domain": "applied-math-statistics",
+   "explanation": "SE(mean) = s / \u221an = 0.082 / \u221a9 = 0.0275 ft. Averaging n independent measurements tightens precision by \u221an.",
+   "parameters": {
+    "n": 9,
+    "s": 0.0824534602630619
+   },
+   "qid": "ea0ddd7d7bd4",
+   "schema_version": 1,
+   "seed": 1196051962,
+   "stem": "Repeated measurements have a standard deviation of 0.082 ft. What is the standard error of the mean of 9 measurements?",
+   "topic": "std-error-mean"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "0.1083 ft",
+    "0.0043 ft",
+    "0.022 ft",
+    "0.0009 ft"
+   ],
+   "difficulty": 2,
+   "domain": "applied-math-statistics",
+   "explanation": "SE(mean) = s / \u221an = 0.022 / \u221a25 = 0.0043 ft. Averaging n independent measurements tightens precision by \u221an.",
+   "parameters": {
+    "n": 25,
+    "s": 0.021661929672312535
+   },
+   "qid": "e4a10de9c489",
+   "schema_version": 1,
+   "seed": 1609896905,
+   "stem": "Repeated measurements have a standard deviation of 0.022 ft. What is the standard error of the mean of 25 measurements?",
+   "topic": "std-error-mean"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "17977377121 acres",
+    "18.95 acres",
+    "9.47 acres",
+    "4.74 acres"
+   ],
+   "difficulty": 1,
+   "domain": "applied-math-statistics",
+   "explanation": "412704 / 43,560 = 9.47 acres.",
+   "parameters": {
+    "kind": "sqft-to-acres",
+    "sqft": 412703.7906606285
+   },
+   "qid": "ecfe25d7d58b",
+   "schema_version": 1,
+   "seed": 1858667687,
+   "stem": "A parcel measures 412704 square feet. What is its area in acres?",
+   "topic": "unit-conversions"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "5.65 acres",
+    "11.30 acres",
+    "22.59 acres",
+    "21435771453 acres"
+   ],
+   "difficulty": 1,
+   "domain": "applied-math-statistics",
+   "explanation": "492098 / 43,560 = 11.30 acres.",
+   "parameters": {
+    "kind": "sqft-to-acres",
+    "sqft": 492097.5999365151
+   },
+   "qid": "ef6a8463a3bb",
+   "schema_version": 1,
+   "seed": 1217049684,
+   "stem": "A parcel measures 492098 square feet. What is its area in acres?",
+   "topic": "unit-conversions"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "Yes \u2014 all five elements are satisfied",
+    "No \u2014 fails the open and notorious use element",
+    "No \u2014 fails the hostile claim (without permission) element",
+    "No \u2014 fails the exclusive possession element"
+   ],
+   "difficulty": 3,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "All five elements \u2014 actual, open/notorious, exclusive, hostile, continuous \u2014 must be met. The claim fails on: hostile claim (without permission).",
+   "parameters": {
+    "missing_element": "hostile claim (without permission)"
+   },
+   "qid": "7aeb30466534",
+   "schema_version": 1,
+   "seed": 1892697983,
+   "stem": "Ruth has occupied the strip for 23 years under the record owner's written permission, though her possession was actual, open, exclusive, and continuous. The statutory period is 20 years. Does Ruth's adverse possession claim succeed?",
+   "topic": "adverse-possession"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "Yes \u2014 all five elements are satisfied",
+    "No \u2014 fails the continuous possession for the statutory period element",
+    "No \u2014 fails the open and notorious use element",
+    "No \u2014 fails the actual possession element"
+   ],
+   "difficulty": 3,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "All five elements \u2014 actual, open/notorious, exclusive, hostile, continuous \u2014 must be met. The claim fails on: actual possession.",
+   "parameters": {
+    "missing_element": "actual possession"
+   },
+   "qid": "873801040919",
+   "schema_version": 1,
+   "seed": 1172761984,
+   "stem": "Ruth has never set foot on the strip; she merely asserts ownership on paper. She has been open about the claim for 23 years, excluded others, acted without permission, and never interrupted it. The statutory period is 20 years. Does Ruth's adverse possession claim succeed?",
+   "topic": "adverse-possession"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "Hughes prevails \u2014 first in time, first in right",
+    "Ivers prevails \u2014 possession is nine-tenths of the law",
+    "Ivers prevails \u2014 first to record",
+    "They take as tenants in common, splitting Blackacre equally"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "Under a race statute \u2014 the first to record wins: Ivers recorded first, so Ivers wins.",
+   "parameters": {
+    "act": "race",
+    "b_had_notice": true,
+    "b_wins": true,
+    "subtype": "recording-act"
+   },
+   "qid": "1e04e55e6901",
+   "schema_version": 1,
+   "seed": 1605764699,
+   "stem": "O conveys Blackacre to Hughes, who does not record. O then conveys Blackacre to Ivers, who knew about the first conveyance and records first. This state follows a race statute \u2014 the first to record wins. Who prevails?",
+   "topic": "deeds-recording"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "General warranty deed",
+    "Sheriff's deed",
+    "Special warranty deed",
+    "Quitclaim deed"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "General warranty deed: warrants against all defects in the chain of title.",
+   "parameters": {
+    "ask": "strongest",
+    "subtype": "deed-type"
+   },
+   "qid": "8e35e05301a3",
+   "schema_version": 1,
+   "seed": 110905092,
+   "stem": "A buyer wants the strongest possible guarantee of title against defects arising at any time in the chain of title. Which deed should the buyer insist on?",
+   "topic": "deeds-recording"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "Easement by necessity \u2014 landlocked parcel, no other access",
+    "Easement in gross \u2014 benefits a person/company, not a parcel",
+    "Terminated by merger \u2014 dominant and servient estates united",
+    "Prescriptive easement \u2014 long, open, hostile use ripened into a right"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "The facts match: Easement by necessity \u2014 landlocked parcel, no other access.",
+   "parameters": {
+    "correct_type": "Easement by necessity \u2014 landlocked parcel, no other access"
+   },
+   "qid": "082e72b95fbe",
+   "schema_version": 1,
+   "seed": 1818305799,
+   "stem": "Parcel B is completely landlocked; the only practical access is across Parcel A, from which B was severed. No easement was ever written. What best describes this easement situation?",
+   "topic": "easements"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "Prescriptive easement \u2014 long, open, hostile use ripened into a right",
+    "Terminated by merger \u2014 dominant and servient estates united",
+    "Express grant \u2014 created by the deed itself",
+    "Easement by necessity \u2014 landlocked parcel, no other access"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "The facts match: Terminated by merger \u2014 dominant and servient estates united.",
+   "parameters": {
+    "correct_type": "Terminated by merger \u2014 dominant and servient estates united"
+   },
+   "qid": "ae1e62d2e067",
+   "schema_version": 1,
+   "seed": 1296161321,
+   "stem": "Elena owned both the dominant and servient parcels and then sold the servient parcel without reserving the driveway easement. What best describes this easement situation?",
+   "topic": "easements"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "The boundary follows an artificial monument: an original 1-inch iron pin set in 1959",
+    "The boundary follows a direction: a deed bearing of N 72.37 E",
+    "The most recently created evidence controls",
+    "The two are averaged and the boundary is set midway"
+   ],
+   "difficulty": 1,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "Hierarchy of calls: natural monuments > artificial monuments > adjoiners > distance > direction > area > coordinates. An artificial monument outranks a direction \u2014 monuments beat measurements because they best reflect the original parties' intent.",
+   "parameters": {
+    "high_desc": "The boundary follows an artificial monument: an original 1-inch iron pin set in 1959",
+    "high_kind": "an artificial monument",
+    "high_rank": 1,
+    "low_kind": "a direction",
+    "low_rank": 4
+   },
+   "qid": "7ea9f4fab219",
+   "schema_version": 1,
+   "seed": 320631018,
+   "stem": "A deed and the ground disagree. The two conflicting pieces of evidence are (A) A direction: a deed bearing of N 72.37 E and (B) An artificial monument: an original 1-inch iron pin set in 1959. Under the hierarchy of calls, which controls the boundary location?",
+   "topic": "hierarchy-of-calls"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "The most recently created evidence controls",
+    "The boundary follows an area: a stated area of 6.34 acres",
+    "The two are averaged and the boundary is set midway",
+    "The boundary follows a natural monument: the thread of the north fork of Baker River (called as the boundary)"
+   ],
+   "difficulty": 1,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "Hierarchy of calls: natural monuments > artificial monuments > adjoiners > distance > direction > area > coordinates. A natural monument outranks an area \u2014 monuments beat measurements because they best reflect the original parties' intent.",
+   "parameters": {
+    "high_desc": "The boundary follows a natural monument: the thread of the north fork of Baker River (called as the boundary)",
+    "high_kind": "a natural monument",
+    "high_rank": 0,
+    "low_kind": "an area",
+    "low_rank": 5
+   },
+   "qid": "c434117ad96f",
+   "schema_version": 1,
+   "seed": 1523536486,
+   "stem": "A deed and the ground disagree. The two conflicting pieces of evidence are (A) An area: a stated area of 6.34 acres and (B) A natural monument: the thread of the north fork of Baker River (called as the boundary). Under the hierarchy of calls, which controls the boundary location?",
+   "topic": "hierarchy-of-calls"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "80.00 acres",
+    "640.00 acres",
+    "160.00 acres",
+    "320.00 acres"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "A section is 640 acres. Halves divide by 2; quarters divide by 4. 640 / 4 = 160.00 acres.",
+   "parameters": {
+    "divisor": 4,
+    "subtype": "acres"
+   },
+   "qid": "ab20f338baaa",
+   "schema_version": 1,
+   "seed": 679799754,
+   "stem": "How many acres are in the SW1/4 of Section 27?",
+   "topic": "plss"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "Section 14",
+    "Section 5",
+    "Section 17",
+    "Section 12"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "Sections are numbered boustrophedon (1\u20136 east-to-west across the north tier, then snaking). Directly south of Section 11 is Section 14 \u2014 not simply 11\u00b16, because alternate tiers run opposite directions.",
+   "parameters": {
+    "section": 11,
+    "subtype": "south"
+   },
+   "qid": "bf4faabcb3c5",
+   "schema_version": 1,
+   "seed": 1560154154,
+   "stem": "In a standard PLSS township, which section lies directly south of Section 11?",
+   "topic": "plss"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "The common grantor retains it \u2014 the strip was never conveyed",
+    "A owns the disputed strip \u2014 senior rights prevail",
+    "The overlap/gap is apportioned equally \u2014 simultaneous conveyances, no seniority",
+    "B owns the disputed strip \u2014 the later deed controls"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "Sequential conveyances create senior (first) and junior (second) rights. In an overlap the senior grantee, Becker, prevails. (Becker = first/senior grantee, Chen = second/junior grantee.)",
+   "parameters": {
+    "grantor": "Ellis",
+    "issue": "overlap",
+    "junior": "Chen",
+    "order": "sequential",
+    "senior": "Becker"
+   },
+   "qid": "0c067535d2d5",
+   "schema_version": 1,
+   "seed": 1787618955,
+   "stem": "in 1960 Ellis conveyed the west parcel to Becker; in 1962 Ellis conveyed the east parcel to Chen. The two descriptions overlap by 10 feet. Who owns the overlap strip?",
+   "topic": "senior-junior-rights"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "B owns the disputed strip \u2014 the later deed controls",
+    "The overlap/gap is apportioned equally \u2014 simultaneous conveyances, no seniority",
+    "The common grantor retains it \u2014 the strip was never conveyed",
+    "A owns the disputed strip \u2014 senior rights prevail"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "Simultaneous conveyances have no seniority \u2014 the overlap/gap is apportioned equally between the grantees. (Larsen = first/senior grantee, Foster = second/junior grantee.)",
+   "parameters": {
+    "grantor": "Chen",
+    "issue": "overlap",
+    "junior": "Foster",
+    "order": "simultaneous",
+    "senior": "Larsen"
+   },
+   "qid": "de2660e9fe33",
+   "schema_version": 1,
+   "seed": 157398266,
+   "stem": "Chen conveyed the west parcel to Larsen and the east parcel to Foster in the same instrument. The two descriptions overlap by 6 feet. Who owns the overlap strip?",
+   "topic": "senior-junior-rights"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "The riparian owner loses all rights to the affected land",
+    "The boundary stays at the former location \u2014 sudden change (avulsion)",
+    "The boundary moves with the water \u2014 gradual, imperceptible change",
+    "The boundary is fixed at the original government meander line"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "This is reliction: gradual and imperceptible, so the boundary moves with the water.",
+   "parameters": {
+    "moves": true,
+    "process": "reliction"
+   },
+   "qid": "c5501ac981ad",
+   "schema_version": 1,
+   "seed": 752017464,
+   "stem": "Over several decades the lake level has gradually receded, exposing about 156 feet of new shoreline. Alvarez owns the riparian parcel. Where is the water boundary now?",
+   "topic": "water-boundaries"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "The boundary stays at the former location \u2014 sudden change (avulsion)",
+    "The boundary moves with the water \u2014 gradual, imperceptible change",
+    "The boundary is fixed at the original government meander line",
+    "The riparian owner loses all rights to the affected land"
+   ],
+   "difficulty": 2,
+   "domain": "boundary-law-and-real-property",
+   "explanation": "This is accretion: gradual and imperceptible, so the boundary moves with the water.",
+   "parameters": {
+    "moves": true,
+    "process": "accretion"
+   },
+   "qid": "7ae36459f0c8",
+   "schema_version": 1,
+   "seed": 1067492313,
+   "stem": "Over about 30 years the river's east bank has gradually and imperceptibly built outward by roughly 163 feet of new dry land. Jensen owns the riparian parcel. Where is the water boundary now?",
+   "topic": "water-boundaries"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "Disclose the interest in writing and withdraw if impartiality cannot be maintained",
+    "Proceed normally; personal interests do not matter",
+    "Resolve it by favoring the higher-paying client",
+    "Say nothing \u2014 professionalism means handling it quietly"
+   ],
+   "difficulty": 2,
+   "domain": "business-concepts-ethics",
+   "explanation": "A personal stake in the outcome is a textbook conflict \u2014 disclosure is mandatory, withdrawal follows if judgment could be biased.",
+   "parameters": {
+    "correct": "Disclose the interest in writing and withdraw if impartiality cannot be maintained"
+   },
+   "qid": "695da2cca553",
+   "schema_version": 1,
+   "seed": 178880905,
+   "stem": "The surveyor personally owns the parcel adjoining the client's project, and the boundary location affects both values. What should the surveyor do?",
+   "topic": "conflict-of-interest"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "Say nothing \u2014 professionalism means handling it quietly",
+    "Resolve it by favoring the higher-paying client",
+    "Proceed normally; personal interests do not matter",
+    "Disclose to both clients and proceed only with informed written consent, or decline"
+   ],
+   "difficulty": 2,
+   "domain": "business-concepts-ethics",
+   "explanation": "Dual representation requires informed consent from everyone affected \u2014 otherwise decline the work.",
+   "parameters": {
+    "correct": "Disclose to both clients and proceed only with informed written consent, or decline"
+   },
+   "qid": "92bfa3f55417",
+   "schema_version": 1,
+   "seed": 592932721,
+   "stem": "The surveyor's firm is asked to survey a boundary dispute between two of its own current clients. What should the surveyor do?",
+   "topic": "conflict-of-interest"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "Consideration",
+    "Legal purpose",
+    "Competent parties",
+    "Offer and acceptance"
+   ],
+   "difficulty": 2,
+   "domain": "business-concepts-ethics",
+   "explanation": "A contract with an unlawful purpose is void \u2014 no enforceable agreement exists.",
+   "parameters": {
+    "correct": "Legal purpose"
+   },
+   "qid": "27a0358f941a",
+   "schema_version": 1,
+   "seed": 1152314496,
+   "stem": "The parties agree the surveyor will falsify a boundary location for a fee. Which required element of a valid contract is missing?",
+   "topic": "contract-elements"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "Consideration",
+    "Legal purpose",
+    "Competent parties",
+    "Offer and acceptance"
+   ],
+   "difficulty": 2,
+   "domain": "business-concepts-ethics",
+   "explanation": "Minors generally lack capacity to contract; the agreement is voidable.",
+   "parameters": {
+    "correct": "Competent parties"
+   },
+   "qid": "7a3ce60d3311",
+   "schema_version": 1,
+   "seed": 1642388057,
+   "stem": "A 16-year-old, unemancipated minor signs a surveying services agreement alone. Which required element of a valid contract is missing?",
+   "topic": "contract-elements"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "Obey the client \u2014 the client pays the bills",
+    "Obey the employer \u2014 follow orders quietly",
+    "Do it but document nothing, to limit liability",
+    "Decline \u2014 the surveyor locates existing boundaries; they do not create favorable ones"
+   ],
+   "difficulty": 2,
+   "domain": "business-concepts-ethics",
+   "explanation": "Loyalty to a client never justifies misrepresenting a boundary to the public and adjoining owners.",
+   "parameters": {
+    "correct": "Decline \u2014 the surveyor locates existing boundaries; they do not create favorable ones"
+   },
+   "qid": "156421b2bda0",
+   "schema_version": 1,
+   "seed": 1551476065,
+   "stem": "A developer offers a bonus for moving a boundary line to gain buildable area. What is the surveyor's proper course of action?",
+   "topic": "duty-hierarchy"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "Obey the employer \u2014 follow orders quietly",
+    "Obey the client \u2014 the client pays the bills",
+    "Do it but document nothing, to limit liability",
+    "Decline \u2014 the surveyor locates existing boundaries; they do not create favorable ones"
+   ],
+   "difficulty": 2,
+   "domain": "business-concepts-ethics",
+   "explanation": "Loyalty to a client never justifies misrepresenting a boundary to the public and adjoining owners.",
+   "parameters": {
+    "correct": "Decline \u2014 the surveyor locates existing boundaries; they do not create favorable ones"
+   },
+   "qid": "80e3b3ee4466",
+   "schema_version": 1,
+   "seed": 1811449646,
+   "stem": "A developer offers a bonus for moving a boundary line to gain buildable area. What is the surveyor's proper course of action?",
+   "topic": "duty-hierarchy"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "Time and materials (hourly), ideally with a not-to-exceed cap",
+    "Unit price",
+    "Lump sum",
+    "Contingency fee (percentage of project value)"
+   ],
+   "difficulty": 1,
+   "domain": "business-concepts-ethics",
+   "explanation": "Uncertain scope makes fixed pricing a gamble for one side; hourly with a cap shares the risk fairly.",
+   "parameters": {
+    "correct": "Time and materials (hourly), ideally with a not-to-exceed cap"
+   },
+   "qid": "a2ac2c695817",
+   "schema_version": 1,
+   "seed": 504062087,
+   "stem": "A multi-phase ALTA survey where the title commitment keeps changing and the effort is genuinely unpredictable. Which fee structure is most appropriate?",
+   "topic": "fee-structures"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "Lump sum",
+    "Time and materials (hourly), ideally with a not-to-exceed cap",
+    "Unit price",
+    "Contingency fee (percentage of project value)"
+   ],
+   "difficulty": 1,
+   "domain": "business-concepts-ethics",
+   "explanation": "Well-defined scope and predictable effort \u2014 the client gets price certainty.",
+   "parameters": {
+    "correct": "Lump sum"
+   },
+   "qid": "c85473c9a7be",
+   "schema_version": 1,
+   "seed": 1891477383,
+   "stem": "A 0.5-acre residential lot survey with a clearly defined scope and no unusual complications. Which fee structure is most appropriate?",
+   "topic": "fee-structures"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "Yes \u2014 a quick review is enough",
+    "No \u2014 a seal certifies work prepared under the sealer's responsible charge",
+    "No \u2014 surveyors may never seal plats",
+    "Yes \u2014 any licensed surveyor may seal any survey document"
+   ],
+   "difficulty": 2,
+   "domain": "business-concepts-ethics",
+   "explanation": "Sealing unchecked work misrepresents responsibility and is a classic violation.",
+   "parameters": {
+    "correct": "No \u2014 a seal certifies work prepared under the sealer's responsible charge"
+   },
+   "qid": "e2831e6a37df",
+   "schema_version": 1,
+   "seed": 1480573098,
+   "stem": "A licensed surveyor is asked to seal a plat prepared entirely by another firm, which they only glanced at. May the surveyor properly seal it?",
+   "topic": "sealing"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "Yes \u2014 a quick review is enough",
+    "No \u2014 sealing is only valid where the surveyor is licensed",
+    "No \u2014 surveyors may never seal plats",
+    "Yes \u2014 any licensed surveyor may seal any survey document"
+   ],
+   "difficulty": 2,
+   "domain": "business-concepts-ethics",
+   "explanation": "A seal carries jurisdictional authority; using it elsewhere is unauthorized practice.",
+   "parameters": {
+    "correct": "No \u2014 sealing is only valid where the surveyor is licensed"
+   },
+   "qid": "93a42b6d41d9",
+   "schema_version": 1,
+   "seed": 1604044291,
+   "stem": "A surveyor is asked to seal a document for use in a state where they hold no license. May the surveyor properly seal it?",
+   "topic": "sealing"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "58.94 ft",
+    "2.37 ft",
+    "60.86 ft",
+    "0.28 ft"
+   ],
+   "difficulty": 2,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Linear interpolation: d = (126 \u2212 125.72) / (132.95 \u2212 125.72) \u00d7 61 = 2.37 ft from the lower point.",
+   "parameters": {
+    "L": 60.86043829489451,
+    "e1": 125.71871772825631,
+    "e2": 132.9467578946929,
+    "target": 126
+   },
+   "qid": "23de14b02493",
+   "schema_version": 1,
+   "seed": 1567393753,
+   "stem": "Two spot elevations, 125.72 ft and 132.95 ft, are 61 ft apart. How far from the 125.72-ft point does the 126-ft contour fall?",
+   "topic": "contour-interpolation"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "65.42 ft",
+    "0.21 ft",
+    "60.07 ft",
+    "0.02 ft"
+   ],
+   "difficulty": 2,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Linear interpolation: d = (140 \u2212 139.98) / (145.49 \u2212 139.98) \u00d7 60 = 0.21 ft from the lower point.",
+   "parameters": {
+    "L": 60.06715608480763,
+    "e1": 139.98052075302826,
+    "e2": 145.48975870294626,
+    "target": 140
+   },
+   "qid": "85ce8a395750",
+   "schema_version": 1,
+   "seed": 92024330,
+   "stem": "Two spot elevations, 139.98 ft and 145.49 ft, are 60 ft apart. How far from the 139.98-ft point does the 140-ft contour fall?",
+   "topic": "contour-interpolation"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "Slope map \u2014 derived product",
+    "DEM \u2014 bare earth",
+    "Hillshade \u2014 visualization only",
+    "DSM \u2014 surface with features"
+   ],
+   "difficulty": 1,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "DEM = bare-earth terrain (filtered returns). DSM = first-return surface including buildings and canopy. Pick the product that matches what you need to measure.",
+   "parameters": {
+    "correct": "DEM \u2014 bare earth"
+   },
+   "qid": "2e83fd1909cb",
+   "schema_version": 1,
+   "seed": 323546626,
+   "stem": "A project needs a floodplain study needing ground elevations under forest canopy. Which LiDAR product is appropriate?",
+   "topic": "lidar-products"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "Slope map \u2014 derived product",
+    "Hillshade \u2014 visualization only",
+    "DSM \u2014 surface with features",
+    "DEM \u2014 bare earth"
+   ],
+   "difficulty": 1,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "DEM = bare-earth terrain (filtered returns). DSM = first-return surface including buildings and canopy. Pick the product that matches what you need to measure.",
+   "parameters": {
+    "correct": "DEM \u2014 bare earth"
+   },
+   "qid": "29e61704c748",
+   "schema_version": 1,
+   "seed": 1486680535,
+   "stem": "A project needs a floodplain study needing ground elevations under forest canopy. Which LiDAR product is appropriate?",
+   "topic": "lidar-products"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "1:6,510",
+    "1:543",
+    "1:443,090",
+    "1:0.0221"
+   ],
+   "difficulty": 2,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Scale = f / H. Convert to common units: 4476 ft \u00d7 12 = 53708 in; 53708 / 8.25 = 6,510 \u2192 1:6,510.",
+   "parameters": {
+    "H_ft": 4475.659923202045,
+    "f_in": 8.25
+   },
+   "qid": "e7e4567d308a",
+   "schema_version": 1,
+   "seed": 190390210,
+   "stem": "An aerial photo is taken with a 8.25-inch focal-length camera from 4476 ft above the terrain. What is the photo scale?",
+   "topic": "photo-scale"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "1:341,975",
+    "1:792",
+    "1:0.0152",
+    "1:9,499"
+   ],
+   "difficulty": 2,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Scale = f / H. Convert to common units: 4750 ft \u00d7 12 = 56996 in; 56996 / 6.00 = 9,499 \u2192 1:9,499.",
+   "parameters": {
+    "H_ft": 4749.6504497331825,
+    "f_in": 6.0
+   },
+   "qid": "d37a49da39d0",
+   "schema_version": 1,
+   "seed": 431283285,
+   "stem": "An aerial photo is taken with a 6.00-inch focal-length camera from 4750 ft above the terrain. What is the photo scale?",
+   "topic": "photo-scale"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "Both equally",
+    "Neither \u2014 it is tabular data",
+    "Raster data",
+    "Vector data"
+   ],
+   "difficulty": 1,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Raster = gridded cells (imagery, elevation surfaces). Vector = discrete points/lines/polygons with attributes (parcels, roads).",
+   "parameters": {
+    "correct": "Vector data"
+   },
+   "qid": "51aabb5c86ce",
+   "schema_version": 1,
+   "seed": 454738890,
+   "stem": "A GIS layer holds parcel boundary polygons with owner attributes. Is this raster or vector data?",
+   "topic": "raster-vector"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "Raster data",
+    "Neither \u2014 it is tabular data",
+    "Vector data",
+    "Both equally"
+   ],
+   "difficulty": 1,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Raster = gridded cells (imagery, elevation surfaces). Vector = discrete points/lines/polygons with attributes (parcels, roads).",
+   "parameters": {
+    "correct": "Vector data"
+   },
+   "qid": "f7d7b7408c92",
+   "schema_version": 1,
+   "seed": 295503630,
+   "stem": "A GIS layer holds road centerlines for network routing. Is this raster or vector data?",
+   "topic": "raster-vector"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "Azimuthal equidistant",
+    "Lambert conformal conic",
+    "State Plane uses a single projection in every state",
+    "Transverse Mercator"
+   ],
+   "difficulty": 2,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Lambert conformal conic suits east-west zones (minimal distortion along parallels); transverse Mercator suits north-south zones (minimal distortion along the central meridian).",
+   "parameters": {
+    "correct": "Transverse Mercator"
+   },
+   "qid": "9a6a89186399",
+   "schema_version": 1,
+   "seed": 631043917,
+   "stem": "A State Plane zone spans about 350 miles north-south but only 100 miles east-west. Which projection family does it use?",
+   "topic": "state-plane-projection"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "Transverse Mercator",
+    "Azimuthal equidistant",
+    "Lambert conformal conic",
+    "State Plane uses a single projection in every state"
+   ],
+   "difficulty": 2,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Lambert conformal conic suits east-west zones (minimal distortion along parallels); transverse Mercator suits north-south zones (minimal distortion along the central meridian).",
+   "parameters": {
+    "correct": "Transverse Mercator"
+   },
+   "qid": "69830a8b85bd",
+   "schema_version": 1,
+   "seed": 298615749,
+   "stem": "A State Plane zone spans about 350 miles north-south but only 100 miles east-west. Which projection family does it use?",
+   "topic": "state-plane-projection"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "Zone 16",
+    "Zone 15",
+    "Zone 17",
+    "Zone 14"
+   ],
+   "difficulty": 1,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Zone = floor((lon + 180)/6) + 1 = floor((-90.9 + 180)/6) + 1 = 15. Zones are 6\u00b0 wide starting at 180\u00b0W.",
+   "parameters": {
+    "lon": -90.87770102457091
+   },
+   "qid": "22c8d0651775",
+   "schema_version": 1,
+   "seed": 1687595933,
+   "stem": "A project is centered at longitude -90.9\u00b0. What is its UTM zone?",
+   "topic": "utm-zone"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "Zone 17",
+    "Zone 13",
+    "Zone 14",
+    "Zone 15"
+   ],
+   "difficulty": 1,
+   "domain": "mapping-processes-and-methods",
+   "explanation": "Zone = floor((lon + 180)/6) + 1 = floor((-97.0 + 180)/6) + 1 = 14. Zones are 6\u00b0 wide starting at 180\u00b0W.",
+   "parameters": {
+    "lon": -97.04057701254717
+   },
+   "qid": "a1898762d70f",
+   "schema_version": 1,
+   "seed": 271463870,
+   "stem": "A project is centered at longitude -97.0\u00b0. What is its UTM zone?",
+   "topic": "utm-zone"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "0.49\u2032",
+    "3.9\u2032",
+    "-3.9\u2032",
+    "235\u2032"
+   ],
+   "difficulty": 1,
+   "domain": "survey-computations",
+   "explanation": "Theoretical sum = (n\u22122)\u00b7180\u00b0 = 1080\u00b0. Misclosure = observed \u2212 theoretical = 3.9\u2032. (Distribute \u2212misclosure/n per angle to adjust.)",
+   "parameters": {
+    "n": 8,
+    "observed_sum": 1080.0653492563524
+   },
+   "qid": "b392f482e671",
+   "schema_version": 1,
+   "seed": 396494580,
+   "stem": "The observed sum of interior angles of a 8-sided closed traverse is 1080.065\u00b0. What is the angular misclosure?",
+   "topic": "angular-misclosure"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "0.75\u2032",
+    "225\u2032",
+    "3.8\u2032",
+    "-3.8\u2032"
+   ],
+   "difficulty": 1,
+   "domain": "survey-computations",
+   "explanation": "Theoretical sum = (n\u22122)\u00b7180\u00b0 = 540\u00b0. Misclosure = observed \u2212 theoretical = 3.8\u2032. (Distribute \u2212misclosure/n per angle to adjust.)",
+   "parameters": {
+    "n": 5,
+    "observed_sum": 540.062540318493
+   },
+   "qid": "416bd3288e0e",
+   "schema_version": 1,
+   "seed": 1595132382,
+   "stem": "The observed sum of interior angles of a 5-sided closed traverse is 540.063\u00b0. What is the angular misclosure?",
+   "topic": "angular-misclosure"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "2.20 ac",
+    "0.55 ac",
+    "47869 ac",
+    "1.10 ac"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "Shoelace: area = \u00bd|\u03a3(E\u1d62N\u1d62\u208a\u2081 \u2212 E\u1d62\u208a\u2081N\u1d62)| = 47869 ft\u00b2 = 47869/43,560 = 1.10 acres.",
+   "parameters": {
+    "corners": [
+     [
+      2887.208637353716,
+      3458.6792304481
+     ],
+     [
+      3102.2890407558843,
+      3458.6792304481
+     ],
+     [
+      3102.2890407558843,
+      3681.241753088669
+     ],
+     [
+      2887.208637353716,
+      3681.241753088669
+     ]
+    ]
+   },
+   "qid": "7cfd9a12d520",
+   "schema_version": 1,
+   "seed": 699282325,
+   "stem": "A four-sided parcel has corners at E,N coordinates (2887.21, 3458.68); (3102.29, 3458.68); (3102.29, 3681.24); (2887.21, 3681.24) (feet). What is the parcel area in acres?",
+   "topic": "area-coordinates"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "2.06 ac",
+    "179694 ac",
+    "8.25 ac",
+    "4.13 ac"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "Shoelace: area = \u00bd|\u03a3(E\u1d62N\u1d62\u208a\u2081 \u2212 E\u1d62\u208a\u2081N\u1d62)| = 179694 ft\u00b2 = 179694/43,560 = 4.13 acres.",
+   "parameters": {
+    "corners": [
+     [
+      1480.6812001705518,
+      4113.2754395186785
+     ],
+     [
+      2042.4951837407589,
+      4113.2754395186785
+     ],
+     [
+      2042.4951837407589,
+      4433.12073993991
+     ],
+     [
+      1480.6812001705518,
+      4433.12073993991
+     ]
+    ]
+   },
+   "qid": "fd3023b532db",
+   "schema_version": 1,
+   "seed": 631474562,
+   "stem": "A four-sided parcel has corners at E,N coordinates (1480.68, 4113.28); (2042.50, 4113.28); (2042.50, 4433.12); (1480.68, 4433.12) (feet). What is the parcel area in acres?",
+   "topic": "area-coordinates"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "0.03 ft",
+    "-0.03 ft",
+    "1.38 ft",
+    "0.21 ft"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "Bowditch: correction = \u2212(error \u00d7 leg / perimeter) = \u2212(-0.21 \u00d7 802 / 5225) = 0.03 ft. Corrections oppose the misclosure and scale with leg length.",
+   "parameters": {
+    "err_dep": 0.20248998427391435,
+    "err_lat": -0.21209614314797048,
+    "leg": 802.2257317517203,
+    "perimeter": 5224.717049064911
+   },
+   "qid": "78011c703007",
+   "schema_version": 1,
+   "seed": 896700387,
+   "stem": "A traverse miscloses by -0.21 ft in latitude and 0.20 ft in departure over a 5225-ft perimeter. Using the compass (Bowditch) rule, what is the latitude correction for a 802-ft leg?",
+   "topic": "bowditch"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "0.05 ft",
+    "-0.15 ft",
+    "-0.43 ft",
+    "-0.05 ft"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "Bowditch: correction = \u2212(error \u00d7 leg / perimeter) = \u2212(0.15 \u00d7 822 / 2337) = -0.05 ft. Corrections oppose the misclosure and scale with leg length.",
+   "parameters": {
+    "err_dep": 0.1515859942042623,
+    "err_lat": -0.22457910655180707,
+    "leg": 822.0473135213382,
+    "perimeter": 2336.5920358920052
+   },
+   "qid": "28a876076a1a",
+   "schema_version": 1,
+   "seed": 1692381279,
+   "stem": "A traverse miscloses by -0.22 ft in latitude and 0.15 ft in departure over a 2337-ft perimeter. Using the compass (Bowditch) rule, what is the departure correction for a 822-ft leg?",
+   "topic": "bowditch"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "\u00b10.0994 ft",
+    "\u00b10.0497 ft",
+    "\u00b10.0249 ft",
+    "\u00b10.0696 ft"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "For a sum, variances add: \u03c3 = \u221a(\u03c3\u00b2\u2081 + \u03c3\u00b2\u2082) = \u221a(0.0397\u00b2 + 0.0300\u00b2) = \u00b10.0497 ft. Note the answer lies strictly between the largest single error and the linear sum \u2014 a useful sanity check.",
+   "parameters": {
+    "sigma1": 0.039654371008727145,
+    "sigma2": 0.029962541981170238
+   },
+   "qid": "324ce29b56c5",
+   "schema_version": 1,
+   "seed": 1304978485,
+   "stem": "A distance is measured in two segments with standard errors \u00b10.0397 ft and \u00b10.0300 ft. What is the standard error of the total distance?",
+   "topic": "error-propagation"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "\u00b10.0133 ft",
+    "\u00b10.0532 ft",
+    "\u00b10.0347 ft",
+    "\u00b10.0266 ft"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "For a sum, variances add: \u03c3 = \u221a(\u03c3\u00b2\u2081 + \u03c3\u00b2\u2082) = \u221a(0.0246\u00b2 + 0.0101\u00b2) = \u00b10.0266 ft. Note the answer lies strictly between the largest single error and the linear sum \u2014 a useful sanity check.",
+   "parameters": {
+    "sigma1": 0.02462289810633722,
+    "sigma2": 0.01008872681828784
+   },
+   "qid": "4d672c51e469",
+   "schema_version": 1,
+   "seed": 969293045,
+   "stem": "A distance is measured in two segments with standard errors \u00b10.0246 ft and \u00b10.0101 ft. What is the standard error of the total distance?",
+   "topic": "error-propagation"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "8304.23 ft",
+    "3567.41 ft",
+    "8411.13 ft",
+    "7917.09 ft"
+   ],
+   "difficulty": 1,
+   "domain": "survey-computations",
+   "explanation": "N2 = N1 + D\u00b7cos(az) = 8164.11 + 283.99\u00b7cos(29.56\u00b0) = 8411.13 ft. (Easting would use sine.)",
+   "parameters": {
+    "E1": 3427.2935003683538,
+    "N1": 8164.108458422178,
+    "az": 29.56408419252227,
+    "dist": 283.9922378490329
+   },
+   "qid": "46a2a6d40582",
+   "schema_version": 1,
+   "seed": 1666503210,
+   "stem": "From point A at N 8164.11, E 3427.29, a line runs 283.99 ft on azimuth 29.56\u00b0. What is the northing of point B?",
+   "topic": "forward"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "8915.61 ft",
+    "5391.42 ft",
+    "8062.62 ft",
+    "8292.20 ft"
+   ],
+   "difficulty": 1,
+   "domain": "survey-computations",
+   "explanation": "N2 = N1 + D\u00b7cos(az) = 8603.91 + 624.62\u00b7cos(299.94\u00b0) = 8915.61 ft. (Easting would use sine.)",
+   "parameters": {
+    "E1": 5932.707869600897,
+    "N1": 8603.905423109287,
+    "az": 299.9363733248272,
+    "dist": 624.6203054090292
+   },
+   "qid": "f386985e5419",
+   "schema_version": 1,
+   "seed": 314514473,
+   "stem": "From point A at N 8603.91, E 5932.71, a line runs 624.62 ft on azimuth 299.94\u00b0. What is the northing of point B?",
+   "topic": "forward"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "683.97 ft",
+    "643.09 ft",
+    "341.98 ft",
+    "73.05 ft"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "R = 5729.58/D = 763.92 ft. T = R\u00b7tan(I/2) = 341.98 ft; L = R\u00b7I(rad) = 643.09 ft; E = R(sec(I/2)\u22121) = 73.05 ft.",
+   "parameters": {
+    "D": 7.500205472450082,
+    "I": 48.23317086159012,
+    "asked": "tangent distance T"
+   },
+   "qid": "c86b535a3b21",
+   "schema_version": 1,
+   "seed": 326330253,
+   "stem": "A horizontal curve has degree of curve D = 7.50\u00b0 and intersection angle I = 48.23\u00b0. What is the tangent distance T?",
+   "topic": "horizontal-curve"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "674.02 ft",
+    "1202.96 ft",
+    "194.59 ft",
+    "2405.93 ft"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "R = 5729.58/D = 1070.02 ft. T = R\u00b7tan(I/2) = 674.02 ft; L = R\u00b7I(rad) = 1202.96 ft; E = R(sec(I/2)\u22121) = 194.59 ft.",
+   "parameters": {
+    "D": 5.35466168109988,
+    "I": 64.41459256747262,
+    "asked": "curve length L"
+   },
+   "qid": "54193baa864d",
+   "schema_version": 1,
+   "seed": 531419952,
+   "stem": "A horizontal curve has degree of curve D = 5.35\u00b0 and intersection angle I = 64.41\u00b0. What is the curve length L?",
+   "topic": "horizontal-curve"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "288.36\u00b0",
+    "71.64\u00b0",
+    "251.64\u00b0",
+    "108.36\u00b0"
+   ],
+   "difficulty": 1,
+   "domain": "survey-computations",
+   "explanation": "\u0394N = 230.31 ft, \u0394E = 693.92 ft. Distance = \u221a(\u0394N\u00b2 + \u0394E\u00b2) = 731.14 ft. Azimuth = atan2(\u0394E, \u0394N) = 71.64\u00b0 (N 71.64 E). atan2 handles the quadrant automatically.",
+   "parameters": {
+    "E1": 6144.831741265153,
+    "E2": 6838.7476821324635,
+    "N1": 3255.398310780224,
+    "N2": 3485.7116582312374
+   },
+   "qid": "adb3c7b70f92",
+   "schema_version": 1,
+   "seed": 1105063708,
+   "stem": "Point A is at N 3255.40, E 6144.83. Point B is at N 3485.71, E 6838.75. What is the azimuth from A to B?",
+   "topic": "inverse"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "210.22\u00b0",
+    "329.78\u00b0",
+    "30.22\u00b0",
+    "149.78\u00b0"
+   ],
+   "difficulty": 1,
+   "domain": "survey-computations",
+   "explanation": "\u0394N = -645.09 ft, \u0394E = -375.78 ft. Distance = \u221a(\u0394N\u00b2 + \u0394E\u00b2) = 746.56 ft. Azimuth = atan2(\u0394E, \u0394N) = 210.22\u00b0 (S 30.22 W). atan2 handles the quadrant automatically.",
+   "parameters": {
+    "E1": 8888.094923816232,
+    "E2": 8512.311477348027,
+    "N1": 3185.7605586095133,
+    "N2": 2540.6750955873886
+   },
+   "qid": "5bc2ad2b7382",
+   "schema_version": 1,
+   "seed": 93393148,
+   "stem": "Point A is at N 3185.76, E 8888.09. Point B is at N 2540.68, E 8512.31. What is the azimuth from A to B?",
+   "topic": "inverse"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "100.70 ft",
+    "106.07 ft",
+    "102.88 ft",
+    "109.26 ft"
+   ],
+   "difficulty": 1,
+   "domain": "survey-computations",
+   "explanation": "HI = 103.89 + 2.17 = 106.07 ft. TP1 = HI \u2212 FS = 106.07 \u2212 3.19 = 102.88 ft.",
+   "parameters": {
+    "bm_elev": 103.89271310793899,
+    "bs": 2.1746817253235555,
+    "fs": 3.1893775167243437
+   },
+   "qid": "3e500822b4c2",
+   "schema_version": 1,
+   "seed": 643550383,
+   "stem": "Differential leveling: BM elev 103.89 ft, backsight 2.17 ft, foresight 3.19 ft on TP1. What is the elevation of TP1?",
+   "topic": "level-notes"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "95.45 ft",
+    "112.54 ft",
+    "120.87 ft",
+    "104.20 ft"
+   ],
+   "difficulty": 1,
+   "domain": "survey-computations",
+   "explanation": "HI = 103.78 + 8.75 = 112.54 ft. TP1 = HI \u2212 FS = 112.54 \u2212 8.34 = 104.20 ft.",
+   "parameters": {
+    "bm_elev": 103.78437859730997,
+    "bs": 8.751450888179427,
+    "fs": 8.338892621027801
+   },
+   "qid": "846ca6b2e02c",
+   "schema_version": 1,
+   "seed": 931440826,
+   "stem": "Differential leveling: BM elev 103.78 ft, backsight 8.75 ft, foresight 8.34 ft on TP1. What is the elevation of TP1?",
+   "topic": "level-notes"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "285.46 ft",
+    "286.82 ft",
+    "19.77 ft",
+    "286.14 ft"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "D = K\u00b7s\u00b7cos\u00b2\u03b1 = 100\u00b72.87\u00b7cos\u00b2(3.96\u00b0) = 285.46 ft. V = \u00bdK\u00b7s\u00b7sin(2\u03b1) = 19.77 ft.",
+   "parameters": {
+    "alpha": 3.961291501310771,
+    "asked": "horizontal distance",
+    "s": 2.8682431916872
+   },
+   "qid": "74b515397afb",
+   "schema_version": 1,
+   "seed": 1352074367,
+   "stem": "Stadia observations: rod intercept s = 2.87 ft, vertical angle \u03b1 = 3.96\u00b0 (K = 100). What is the horizontal distance?",
+   "topic": "stadia"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "268.13 ft",
+    "264.14 ft",
+    "266.12 ft",
+    "32.47 ft"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "D = K\u00b7s\u00b7cos\u00b2\u03b1 = 100\u00b72.68\u00b7cos\u00b2(7.01\u00b0) = 264.14 ft. V = \u00bdK\u00b7s\u00b7sin(2\u03b1) = 32.47 ft.",
+   "parameters": {
+    "alpha": 7.007496210545346,
+    "asked": "vertical component",
+    "s": 2.681269156682517
+   },
+   "qid": "ec3c94722ddb",
+   "schema_version": 1,
+   "seed": 278685413,
+   "stem": "Stadia observations: rod intercept s = 2.68 ft, vertical angle \u03b1 = 7.01\u00b0 (K = 100). What is the vertical component?",
+   "topic": "stadia"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "0.40 ft; 1:14,235",
+    "0.22 ft; 1:26,019",
+    "0.28 ft; 1:0.0000",
+    "0.28 ft; 1:20,043"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "e = \u221a(\u03a3lat\u00b2 + \u03a3dep\u00b2) = \u221a(-0.18\u00b2 + 0.22\u00b2) = 0.28 ft. Precision = e / perimeter = 1:20,043.",
+   "parameters": {
+    "perimeter": 5683.698957353558,
+    "sum_dep": 0.21844379841442627,
+    "sum_lat": -0.18082846407729553
+   },
+   "qid": "f5b15afb1378",
+   "schema_version": 1,
+   "seed": 1928769697,
+   "stem": "A closed loop traverse has latitudes summing to -0.18 ft and departures summing to 0.22 ft. The traverse perimeter is 5684 ft. What is the linear error of closure and the relative precision?",
+   "topic": "traverse-misclosure"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "0.24 ft; 1:17,682",
+    "0.25 ft; 1:16,973",
+    "0.32 ft; 1:13,685",
+    "0.25 ft; 1:0.0001"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "e = \u221a(\u03a3lat\u00b2 + \u03a3dep\u00b2) = \u221a(0.07\u00b2 + -0.24\u00b2) = 0.25 ft. Precision = e / perimeter = 1:16,973.",
+   "parameters": {
+    "perimeter": 4317.943909320573,
+    "sum_dep": -0.24419621680664041,
+    "sum_lat": 0.07132622270868419
+   },
+   "qid": "a25d8d79937c",
+   "schema_version": 1,
+   "seed": 729060797,
+   "stem": "A closed loop traverse has latitudes summing to 0.07 ft and departures summing to -0.24 ft. The traverse perimeter is 4318 ft. What is the linear error of closure and the relative precision?",
+   "topic": "traverse-misclosure"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "98.24 ft",
+    "106.12 ft",
+    "118.65 ft",
+    "109.77 ft"
+   ],
+   "difficulty": 3,
+   "domain": "survey-computations",
+   "explanation": "y = PVC + g1\u00b7x + (r/2)x\u00b2, r = A/L = 3.65/724 = 0.000050/ft. y = 113.15 + -0.02669\u00b7559 + 0.5\u00b70.000050\u00b7559\u00b2 = 106.12 ft.",
+   "parameters": {
+    "L": 723.8271324673954,
+    "g1": -2.6689321018883057,
+    "g2": 0.9833868766823795,
+    "pvc_elev": 113.15418549324097,
+    "x": 558.9859439621213
+   },
+   "qid": "9519de6518bb",
+   "schema_version": 1,
+   "seed": 2040215037,
+   "stem": "A 724-ft vertical curve joins g1 = -2.67% to g2 = 0.98%. The PVC elevation is 113.15 ft. What is the elevation 559 ft from the PVC?",
+   "topic": "vertical-curve"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "108.68 ft",
+    "109.54 ft",
+    "109.30 ft",
+    "108.62 ft"
+   ],
+   "difficulty": 3,
+   "domain": "survey-computations",
+   "explanation": "y = PVC + g1\u00b7x + (r/2)x\u00b2, r = A/L = 0.86/452 = 0.000019/ft. y = 108.96 + -0.00429\u00b779 + 0.5\u00b70.000019\u00b779\u00b2 = 108.68 ft.",
+   "parameters": {
+    "L": 451.93592723730166,
+    "g1": -0.42939265144446725,
+    "g2": 0.42939265144446725,
+    "pvc_elev": 108.96022319455551,
+    "x": 78.9142693983461
+   },
+   "qid": "1846adf6b4bb",
+   "schema_version": 1,
+   "seed": 1031934611,
+   "stem": "A 452-ft vertical curve joins g1 = -0.43% to g2 = 0.43%. The PVC elevation is 108.96 ft. What is the elevation 79 ft from the PVC?",
+   "topic": "vertical-curve"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "3669.7 CY",
+    "7339.5 CY",
+    "99083 CY",
+    "594.6 CY"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "V = L(A1+A2)/2 = 145(574+796)/2 = 99083 ft\u00b3 = /27 = 3669.7 CY.",
+   "parameters": {
+    "A1": 573.6996672846155,
+    "A2": 795.5706159747031,
+    "L": 144.72332364677663
+   },
+   "qid": "951d26077efd",
+   "schema_version": 1,
+   "seed": 1696951547,
+   "stem": "Two cross-sections 145 ft apart have areas 574 ft\u00b2 and 796 ft\u00b2. By the average end area method, what is the volume in cubic yards?",
+   "topic": "volumes"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "2064.0 CY",
+    "7389.3 CY",
+    "14778.7 CY",
+    "199512 CY"
+   ],
+   "difficulty": 2,
+   "domain": "survey-computations",
+   "explanation": "V = L(A1+A2)/2 = 173(829+1472)/2 = 199512 ft\u00b3 = /27 = 7389.3 CY.",
+   "parameters": {
+    "A1": 829.4036549809347,
+    "A2": 1472.3338572207135,
+    "L": 173.35794665194422
+   },
+   "qid": "322a2f41a847",
+   "schema_version": 1,
+   "seed": 2023178232,
+   "stem": "Two cross-sections 173 ft apart have areas 829 ft\u00b2 and 1472 ft\u00b2. By the average end area method, what is the volume in cubic yards?",
+   "topic": "volumes"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "11086.05 ft",
+    "11091.10 ft",
+    "11088.58 ft",
+    "11093.63 ft"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "Grid = ground \u00d7 combined factor = 11091.10 \u00d7 0.99977 = 11088.58 ft. (Combined = scale factor \u00d7 elevation factor.)",
+   "parameters": {
+    "cf": 0.999772260308173,
+    "ground": 11091.104995518066
+   },
+   "qid": "46a973a8fc88",
+   "schema_version": 1,
+   "seed": 1509893616,
+   "stem": "A ground distance of 11091.10 ft is reduced to grid with a combined factor of 0.99977. What is the grid distance?",
+   "topic": "combined-factor"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "10989.22 ft",
+    "10980.57 ft",
+    "10983.45 ft",
+    "10986.33 ft"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "Grid = ground \u00d7 combined factor = 10986.33 \u00d7 0.99974 = 10983.45 ft. (Combined = scale factor \u00d7 elevation factor.)",
+   "parameters": {
+    "cf": 0.9997377829671199,
+    "ground": 10986.33464325509
+   },
+   "qid": "17268c5c77de",
+   "schema_version": 1,
+   "seed": 670381272,
+   "stem": "A ground distance of 10986.33 ft is reduced to grid with a combined factor of 0.99974. What is the grid distance?",
+   "topic": "combined-factor"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "NAD83",
+    "WGS84",
+    "NGVD29",
+    "NAVD88"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "NAD83 = current US horizontal datum (GRS80 ellipsoid, so GNSS ellipsoid heights live in it). NAVD88 = current US vertical datum for orthometric heights. NGVD29 is superseded; WGS84 is the GNSS broadcast datum, not the US mapping datum.",
+   "parameters": {
+    "correct": "NAVD88"
+   },
+   "qid": "2f81184c765f",
+   "schema_version": 1,
+   "seed": 1406429334,
+   "stem": "Orthometric heights (elevations) on an NGS data sheet are referenced to which datum?",
+   "topic": "datums"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "NGVD29",
+    "NAVD88",
+    "NAD83 (GRS80 ellipsoid)",
+    "NAD83"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "NAD83 = current US horizontal datum (GRS80 ellipsoid, so GNSS ellipsoid heights live in it). NAVD88 = current US vertical datum for orthometric heights. NGVD29 is superseded; WGS84 is the GNSS broadcast datum, not the US mapping datum.",
+   "parameters": {
+    "correct": "NAD83 (GRS80 ellipsoid)"
+   },
+   "qid": "f95db4e74c1e",
+   "schema_version": 1,
+   "seed": 451388313,
+   "stem": "Ellipsoid heights coming straight off a GNSS receiver are referenced to which datum?",
+   "topic": "datums"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "EF = h / R",
+    "EF = R / (R \u2212 h)",
+    "EF = R / (R + h)",
+    "EF = 1 + h / R"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "EF = R/(R+h) \u2014 always slightly less than 1 above the ellipsoid, shrinking ground distances to the ellipsoid surface. At 8259 ft the factor is about 0.9996051.",
+   "parameters": {
+    "correct": "EF = R / (R + h)",
+    "h": 8259
+   },
+   "qid": "5bafae068cc7",
+   "schema_version": 1,
+   "seed": 1637538817,
+   "stem": "At a project with a mean ellipsoid height of 8259 ft, which formula gives the elevation factor (R = mean earth radius)?",
+   "topic": "elevation-factor"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "EF = h / R",
+    "EF = R / (R \u2212 h)",
+    "EF = R / (R + h)",
+    "EF = 1 + h / R"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "EF = R/(R+h) \u2014 always slightly less than 1 above the ellipsoid, shrinking ground distances to the ellipsoid surface. At 8687 ft the factor is about 0.9995846.",
+   "parameters": {
+    "correct": "EF = R / (R + h)",
+    "h": 8687
+   },
+   "qid": "4b99231275c2",
+   "schema_version": 1,
+   "seed": 1506193394,
+   "stem": "At a project with a mean ellipsoid height of 8687 ft, which formula gives the elevation factor (R = mean earth radius)?",
+   "topic": "elevation-factor"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "It cannot be determined from the factor",
+    "They are exactly equal",
+    "The grid distance is longer",
+    "The grid distance is shorter"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "Grid = ground \u00d7 0.99993. A factor below 1 shrinks the distance (high elevations / inside the projection); above 1 stretches it. Always reduce measurements before comparing to State Plane coordinates.",
+   "parameters": {
+    "cf": 0.99993
+   },
+   "qid": "c26ea92f99ae",
+   "schema_version": 1,
+   "seed": 1790168294,
+   "stem": "A project has a combined factor of 0.99993. For a given line, how does the grid distance compare to the ground distance?",
+   "topic": "grid-vs-ground"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "They are exactly equal",
+    "The grid distance is shorter",
+    "The grid distance is longer",
+    "It cannot be determined from the factor"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "Grid = ground \u00d7 1.00012. A factor below 1 shrinks the distance (high elevations / inside the projection); above 1 stretches it. Always reduce measurements before comparing to State Plane coordinates.",
+   "parameters": {
+    "cf": 1.00012
+   },
+   "qid": "805ddceeea92",
+   "schema_version": 1,
+   "seed": 1126518193,
+   "stem": "A project has a combined factor of 1.00012. For a given line, how does the grid distance compare to the ground distance?",
+   "topic": "grid-vs-ground"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "634.87 ft",
+    "623.38 ft",
+    "646.37 ft",
+    "-646.37 ft"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "H = h \u2212 N = 634.87 \u2212 (-11.49) = 646.37 ft. Orthometric heights (elevations) are measured from the geoid.",
+   "parameters": {
+    "N": -11.492855816146914,
+    "h": 634.8736388762068
+   },
+   "qid": "25153cfff93c",
+   "schema_version": 1,
+   "seed": 378568736,
+   "stem": "GNSS gives an ellipsoid height of 634.87 ft at a point where the geoid height is -11.49 ft. What is the orthometric height?",
+   "topic": "orthometric-height"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "531.24 ft",
+    "527.95 ft",
+    "-527.95 ft",
+    "534.54 ft"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-principles-geodesy",
+   "explanation": "H = h \u2212 N = 531.24 \u2212 (3.29) = 527.95 ft. Orthometric heights (elevations) are measured from the geoid.",
+   "parameters": {
+    "N": 3.290767942846948,
+    "h": 531.2446967881941
+   },
+   "qid": "76f309455208",
+   "schema_version": 1,
+   "seed": 2007885684,
+   "stem": "GNSS gives an ellipsoid height of 531.24 ft at a point where the geoid height is 3.29 ft. What is the orthometric height?",
+   "topic": "orthometric-height"
+  },
+  {
+   "answer_index": 0,
+   "choices": [
+    "Neither accurate nor precise",
+    "Accurate and precise",
+    "Accurate but not precise",
+    "Precise but not accurate"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "Accuracy = closeness to truth (bias); precision = repeatability (scatter). A tight cluster off the mark is precise but biased \u2014 the classic signature of uncorrected systematic error.",
+   "parameters": {
+    "correct": "Neither accurate nor precise"
+   },
+   "qid": "73169ac1e8bc",
+   "schema_version": 1,
+   "seed": 1172824470,
+   "stem": "Repeated measurements of a known baseline come out scattered \u00b10.80 ft with a 0.40-ft north bias. How are these measurements described?",
+   "topic": "accuracy-precision"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "Accurate and precise",
+    "Accurate but not precise",
+    "Precise but not accurate",
+    "Neither accurate nor precise"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "Accuracy = closeness to truth (bias); precision = repeatability (scatter). A tight cluster off the mark is precise but biased \u2014 the classic signature of uncorrected systematic error.",
+   "parameters": {
+    "correct": "Accurate but not precise"
+   },
+   "qid": "62d4177edc67",
+   "schema_version": 1,
+   "seed": 55616654,
+   "stem": "Repeated measurements of a known baseline come out centered on the true position but scattered \u00b10.50 ft. How are these measurements described?",
+   "topic": "accuracy-precision"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "0.066 ft",
+    "0.181 ft",
+    "0.057 ft",
+    "0.568 ft"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "Combined C&R \u2248 0.574 ft per mile\u00b2 (curvature 0.667 minus refraction). 0.574 \u00d7 0.31\u00b2 = 0.057 ft. Balance your sights and it cancels.",
+   "parameters": {
+    "miles": 0.3147038065112393
+   },
+   "qid": "cf7927f4cb7c",
+   "schema_version": 1,
+   "seed": 194274129,
+   "stem": "A level sight is 0.31 miles long. What is the combined curvature-and-refraction correction?",
+   "topic": "curvature-refraction"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "0.028 ft",
+    "0.024 ft",
+    "0.117 ft",
+    "0.238 ft"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "Combined C&R \u2248 0.574 ft per mile\u00b2 (curvature 0.667 minus refraction). 0.574 \u00d7 0.20\u00b2 = 0.024 ft. Balance your sights and it cancels.",
+   "parameters": {
+    "miles": 0.2035063018112265
+   },
+   "qid": "292c1a87167f",
+   "schema_version": 1,
+   "seed": 986998900,
+   "stem": "A level sight is 0.20 miles long. What is the combined curvature-and-refraction correction?",
+   "topic": "curvature-refraction"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "2002.62 ft",
+    "1854.29 ft",
+    "1854.36 ft",
+    "1854.26 ft"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "Corrected = D(1 + ppm\u00d710\u207b\u2076) + const = 1854.32(1 + 8\u00d710\u207b\u2076) + (-0.05) = 1854.29 ft.",
+   "parameters": {
+    "D": 1854.3235297452968,
+    "const": -0.05,
+    "ppm": 8
+   },
+   "qid": "31725938830f",
+   "schema_version": 1,
+   "seed": 2133331848,
+   "stem": "An EDM measures a slope distance of 1854.32 ft. The atmospheric correction is +8 ppm and the prism constant is -0.05 ft. What is the corrected distance?",
+   "topic": "edm-ppm"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "1419.80 ft",
+    "1314.61 ft",
+    "1314.63 ft",
+    "1314.71 ft"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "Corrected = D(1 + ppm\u00d710\u207b\u2076) + const = 1314.67(1 + 8\u00d710\u207b\u2076) + (-0.05) = 1314.63 ft.",
+   "parameters": {
+    "D": 1314.6735798513753,
+    "const": -0.05,
+    "ppm": 8
+   },
+   "qid": "2ad42a18733b",
+   "schema_version": 1,
+   "seed": 960218817,
+   "stem": "An EDM measures a slope distance of 1314.67 ft. The atmospheric correction is +8 ppm and the prism constant is -0.05 ft. What is the corrected distance?",
+   "topic": "edm-ppm"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "A systematic error",
+    "A random error",
+    "Not an error at all",
+    "A blunder"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "It is a human mistake, unpredictable and often large \u2014 caught by checks and redundancy, not by adjustment.",
+   "parameters": {
+    "kind": "a blunder"
+   },
+   "qid": "0dc437ab50c2",
+   "schema_version": 1,
+   "seed": 806611088,
+   "stem": "A rod reading of 5.42 ft is entered in the field book as 4.52 ft. How is this error classified?",
+   "topic": "error-types"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "A random error",
+    "Not an error at all",
+    "A blunder",
+    "A systematic error"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "It follows a pattern and biases every measurement the same way \u2014 it can be modeled and corrected.",
+   "parameters": {
+    "kind": "a systematic error"
+   },
+   "qid": "9692684d3957",
+   "schema_version": 1,
+   "seed": 1189906031,
+   "stem": "The steel tape used for the day's work is later found to be 0.02 ft too long, affecting every measurement the same way. How is this error classified?",
+   "topic": "error-types"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "Window C",
+    "It makes no difference",
+    "Window A",
+    "Window B"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "Lower PDOP = stronger satellite geometry. Window A has the lowest PDOP (1.9); satellite count breaks ties. High PDOP amplifies every ranging error.",
+   "parameters": {
+    "best": "A"
+   },
+   "qid": "3f55e196b9f2",
+   "schema_version": 1,
+   "seed": 690581626,
+   "stem": "Three candidate RTK observation windows: Window B: PDOP 4.0, 11 satellites; Window C: PDOP 4.8, 7 satellites; Window A: PDOP 1.9, 11 satellites. Which window should the crew choose?",
+   "topic": "gnss-window"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "Window B",
+    "Window C",
+    "It makes no difference",
+    "Window A"
+   ],
+   "difficulty": 2,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "Lower PDOP = stronger satellite geometry. Window A has the lowest PDOP (2.7); satellite count breaks ties. High PDOP amplifies every ranging error.",
+   "parameters": {
+    "best": "A"
+   },
+   "qid": "9022fc11ddb8",
+   "schema_version": 1,
+   "seed": 885092228,
+   "stem": "Three candidate RTK observation windows: Window A: PDOP 2.7, 6 satellites; Window B: PDOP 3.1, 8 satellites; Window C: PDOP 3.9, 7 satellites. Which window should the crew choose?",
+   "topic": "gnss-window"
+  },
+  {
+   "answer_index": 3,
+   "choices": [
+    "2.78 ft",
+    "0.91 ft",
+    "11.14 ft",
+    "5.57 ft"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "The middle wire is the mean of the outer two: (6.02 + 5.11)/2 = 5.57 ft. A bigger disagreement signals a reading blunder.",
+   "parameters": {
+    "lower": 5.112672531255956,
+    "upper": 6.023033507400119
+   },
+   "qid": "e87f90ed24f3",
+   "schema_version": 1,
+   "seed": 4994208,
+   "stem": "Three-wire leveling gives upper 6.02 ft and lower 5.11 ft. What should the middle-wire reading be?",
+   "topic": "three-wire"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "1.98 ft",
+    "4.14 ft",
+    "8.27 ft",
+    "2.07 ft"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "The middle wire is the mean of the outer two: (5.13 + 3.15)/2 = 4.14 ft. A bigger disagreement signals a reading blunder.",
+   "parameters": {
+    "lower": 3.145239739666761,
+    "upper": 5.128503913210959
+   },
+   "qid": "80a075c02e17",
+   "schema_version": 1,
+   "seed": 1446202950,
+   "stem": "Three-wire leveling gives upper 5.13 ft and lower 3.15 ft. What should the middle-wire reading be?",
+   "topic": "three-wire"
+  },
+  {
+   "answer_index": 1,
+   "choices": [
+    "An azimuth traverse",
+    "A closed (connecting/link) traverse",
+    "An open traverse",
+    "A closed loop traverse"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "It connects two known control points \u2014 the strongest geometry, both ends checked.",
+   "parameters": {
+    "correct": "A closed (connecting/link) traverse"
+   },
+   "qid": "14813482f3e8",
+   "schema_version": 1,
+   "seed": 676233848,
+   "stem": "A traverse begins at CP1 and ends at a different known control point, CP9. How is this traverse classified?",
+   "topic": "traverse-types"
+  },
+  {
+   "answer_index": 2,
+   "choices": [
+    "An open traverse",
+    "An azimuth traverse",
+    "A closed loop traverse",
+    "A closed (connecting/link) traverse"
+   ],
+   "difficulty": 1,
+   "domain": "surveying-processes-and-methods",
+   "explanation": "It starts and ends at the same known point \u2014 angles and position both check.",
+   "parameters": {
+    "correct": "A closed loop traverse"
+   },
+   "qid": "93fee3c8a474",
+   "schema_version": 1,
+   "seed": 1622276844,
+   "stem": "A traverse begins at control point CP1 and closes back on CP1. How is this traverse classified?",
+   "topic": "traverse-types"
+  }
+ ],
+ "schema_version": 1
+}
