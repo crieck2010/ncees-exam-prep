@@ -1,6 +1,6 @@
-# Exam Prep
+# NCEES Exam Prep
 
-[![CI](https://github.com/crieck2010/exam-prep/actions/workflows/ci.yml/badge.svg)](https://github.com/crieck2010/exam-prep/actions/workflows/ci.yml)
+[![CI](https://github.com/crieck2010/ncees-exam-prep/actions/workflows/ci.yml/badge.svg)](https://github.com/crieck2010/ncees-exam-prep/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Flutter](https://img.shields.io/badge/flutter-3.24%2B-02569B.svg)](https://flutter.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
