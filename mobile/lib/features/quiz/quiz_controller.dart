@@ -36,7 +36,6 @@ class QuizController extends ChangeNotifier {
 
   int _index = 0;
   final Map<String, int> _answers = {};
-  final Set<String> _awaitingConfidence = {};
 
   QuizController(
     this.questions, {

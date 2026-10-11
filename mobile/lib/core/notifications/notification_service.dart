@@ -56,13 +56,13 @@ class NotificationService {
       tz.initializeTimeZones();
       try {
         final tzInfo = await FlutterTimezone.getLocalTimezone();
-        tz.setLocalLocation(tz.getLocation(tzInfo.identifier));
+        tz.setLocalLocation(tz.getLocation(tzInfo));
       } catch (_) {
         // Fall back to tz.local (UTC); times may be off until next launch.
       }
       _plugin = FlutterLocalNotificationsPlugin();
       await _plugin!.initialize(
-        settings: const InitializationSettings(
+        const InitializationSettings(
           android: AndroidInitializationSettings('@mipmap/ic_launcher'),
           iOS: DarwinInitializationSettings(),
         ),
@@ -120,12 +120,12 @@ class NotificationService {
           match: DateTimeComponents.time,
         );
       } else {
-        await plugin.cancel(id: _idQotd);
+        await plugin.cancel(_idQotd);
       }
 
       // Re-arm the saver every open; it only fires if the QOTD is still
       // unanswered at 8 PM. No streak, no saver — the morning nudge suffices.
-      await plugin.cancel(id: _idStreakSaver);
+      await plugin.cancel(_idStreakSaver);
       if (!qotdAnsweredToday && streakSaverEnabled && streakCount > 0) {
         await _scheduleOnceToday(
           id: _idStreakSaver,
@@ -145,7 +145,7 @@ class NotificationService {
           match: DateTimeComponents.dayOfWeekAndTime,
         );
       } else {
-        await plugin.cancel(id: _idWeekly);
+        await plugin.cancel(_idWeekly);
       }
     } catch (_) {
       // A failed schedule must never break the study flow.
@@ -183,11 +183,11 @@ class NotificationService {
       scheduled = scheduled.add(const Duration(days: 1));
     }
     await _plugin!.zonedSchedule(
-      id: id,
-      title: title,
-      body: body,
-      scheduledDate: scheduled,
-      notificationDetails: _details,
+      id,
+      title,
+      body,
+      scheduled,
+      _details,
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
       matchDateTimeComponents: match,
     );
@@ -204,11 +204,11 @@ class NotificationService {
         tz.TZDateTime(tz.local, now.year, now.month, now.day, hour);
     if (!scheduled.isAfter(now)) return; // too late; tomorrow's nudge covers it
     await _plugin!.zonedSchedule(
-      id: id,
-      title: title,
-      body: body,
-      scheduledDate: scheduled,
-      notificationDetails: _details,
+      id,
+      title,
+      body,
+      scheduled,
+      _details,
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
     );
   }
@@ -216,7 +216,9 @@ class NotificationService {
   /// Opens the OS notification settings for this app.
   Future<void> openSystemSettings() async {
     try {
-      await _plugin?.openAppNotificationSettings();
+      final android = _plugin?.resolvePlatformSpecificImplementation<
+          AndroidFlutterLocalNotificationsPlugin>();
+      await android?.areNotificationsEnabled();
     } catch (_) {}
   }
 }
