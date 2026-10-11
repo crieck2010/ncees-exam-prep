@@ -52,41 +52,34 @@ class QuizController extends ChangeNotifier {
   bool get answered => _answers.containsKey(current.qid);
   int? get selectedIndex => _answers[current.qid];
 
-  /// True when the current question is answered but confidence hasn't
-  /// been submitted yet.
-  bool get needsConfidence => _awaitingConfidence.contains(current.qid);
+  /// False — manual self-rating is removed in favor of automatic performance tracking.
+  bool get needsConfidence => false;
 
   /// Locks in an answer. Ignored if the question was already answered.
-  /// The study hook fires later, in [submitConfidence].
+  /// Automatically determines performance quality and fires the study hook immediately.
   void select(int choiceIndex) {
     if (answered) return;
     final question = current;
     _answers[question.qid] = choiceIndex;
-    _awaitingConfidence.add(question.qid);
+    final correct = question.isCorrect(choiceIndex);
     notifyListeners();
-  }
 
-  /// Submits self-reported confidence, computes SM-2 quality, and fires
-  /// the study hook. Ignored if this question isn't awaiting confidence.
-  void submitConfidence(ConfidenceLevel level) {
-    final question = current;
-    if (!_awaitingConfidence.remove(question.qid)) return;
-    final selected = _answers[question.qid]!;
-    final correct = question.isCorrect(selected);
-    notifyListeners();
     final hook = onAnswerLocked;
     if (hook != null) {
       // Fire-and-forget: study persistence must never block the UI.
       unawaited(hook(AnswerEvent(
         question: question,
         isCorrect: correct,
-        quality: level.qualityFor(correct),
-        confidence: level,
+        quality: correct ? 5 : 1,
+        confidence: correct ? ConfidenceLevel.knewIt : ConfidenceLevel.guessed,
         sessionKind: sessionKind,
         answeredAt: DateTime.now(),
       )));
     }
   }
+
+  /// Deprecated backward-compatible no-op: manual confidence self-rating removed.
+  void submitConfidence(ConfidenceLevel level) {}
 
   void next() {
     if (_index < questions.length - 1) {

@@ -141,4 +141,15 @@ class StudyRepository {
     await prefs.setString(_kQotdDate, dateKeyValue);
     await prefs.setBool(_kQotdCorrect, correct);
   }
+
+  // ---- Quiz Settings ----
+
+  static const _kQuestionCount = 'quiz_question_count_v1';
+  static const _kDifficulty = 'quiz_difficulty_v1'; // 0 = all, 1 = easy, 2 = medium, 3 = hard
+
+  int get questionCount => prefs.getInt(_kQuestionCount) ?? 10;
+  Future<void> setQuestionCount(int count) => prefs.setInt(_kQuestionCount, count);
+
+  int get difficulty => prefs.getInt(_kDifficulty) ?? 0;
+  Future<void> setDifficulty(int diff) => prefs.setInt(_kDifficulty, diff);
 }

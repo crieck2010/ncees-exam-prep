@@ -37,9 +37,22 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
   final _entitlements = StubEntitlements();
 
   Future<_HomeData>? _dataFuture;
-  final Set<String> _selected = {...kDomains.map((d) => d.slug)};
-  int _questionCount = 20;
+  _HomeData? _cachedData;
+  String _selectedDomain = 'all';
   bool _milestonesShown = false;
+
+  String _difficultyLabel(int diff) {
+    switch (diff) {
+      case 1:
+        return 'Level 1 (Easy)';
+      case 2:
+        return 'Level 2 (Medium)';
+      case 3:
+        return 'Level 3 (Hard)';
+      default:
+        return 'All Levels';
+    }
+  }
 
   @override
   void initState() {
@@ -100,7 +113,7 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
       examDaysUntil: countdown?.daysUntil,
     );
 
-    return _HomeData(
+    final data = _HomeData(
       questions: questions,
       counts: counts,
       streak: streak,
@@ -114,6 +127,8 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
       weakPingDismissed:
           study.weakPingDismissedDate == dateKey(now),
     );
+    _cachedData = data;
+    return data;
   }
 
   void _refresh() => setState(() {});
@@ -142,9 +157,124 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
   Future<void> _recordSrs(AnswerEvent event) =>
       context.read<StudyRepository>().recordAnswer(event);
 
+  Widget _buildDrawer(BuildContext context, _HomeData? data) {
+    final theme = Theme.of(context);
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: theme.colorScheme.primaryContainer,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Icon(
+                  Icons.architecture,
+                  size: 40,
+                  color: theme.colorScheme.onPrimaryContainer,
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'FS Exam Prep',
+                  style: theme.textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: theme.colorScheme.onPrimaryContainer,
+                  ),
+                ),
+                Text(
+                  'NCEES Fundamentals of Surveying',
+                  style: theme.textTheme.bodySmall?.copyWith(
+                    color: theme.colorScheme.onPrimaryContainer.withOpacity(0.8),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          ListTile(
+            leading: const Icon(Icons.settings_outlined),
+            title: const Text('Settings'),
+            subtitle: const Text('Questions, difficulty, theme & legal'),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const SettingsScreen()),
+              ).then((_) => setState(() {}));
+            },
+          ),
+          if (data != null) ...[
+            ListTile(
+              leading: const Icon(Icons.bar_chart_outlined),
+              title: const Text('Weekly Report & Insights'),
+              subtitle: const Text('Accuracy trends, mastery & study history'),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => WeeklyReportScreen(
+                      journal: data.journal,
+                      bank: data.questions,
+                      dueCount: data.dueCount,
+                    ),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.history_outlined),
+              title: const Text('Spaced Repetition Review'),
+              subtitle: Text('${data.dueCount} questions due for review'),
+              onTap: () {
+                Navigator.of(context).pop();
+                _startReview(context, data);
+              },
+            ),
+          ],
+          const Divider(),
+          ListTile(
+            leading: const Icon(Icons.gavel_outlined),
+            title: const Text('Legal & Disclaimers'),
+            subtitle: const Text('NCEES non-affiliation notice'),
+            onTap: () {
+              Navigator.of(context).pop();
+              _showLegalDialog(context);
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showLegalDialog(BuildContext context) {
+    showDialog<void>(
+      context: context,
+      builder: (context) => AlertDialog(
+        icon: const Icon(Icons.gavel_outlined, size: 36),
+        title: const Text('Legal Notice & Disclaimer'),
+        content: const SingleChildScrollView(
+          child: Text(
+            'FS Exam Prep is an independent educational study tool developed to assist examinees in preparing for the Fundamentals of Surveying (FS) examination.\n\n'
+            'This application is NOT affiliated with, sponsored by, endorsed by, or associated in any way with the National Council of Examiners for Engineering and Surveying (NCEES) or any state licensing board.\n\n'
+            'NCEES and FS are registered trademarks of the National Council of Examiners for Engineering and Surveying. All trademarks, service marks, and trade names referenced in this app remain the property of their respective owners.\n\n'
+            'Practice questions and explanations are independently engineered for training and skill verification purposes only.',
+          ),
+        ),
+        actions: [
+          FilledButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Understood'),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: _buildDrawer(context, _cachedData),
       appBar: AppBar(
         title: const Text('FS Exam Prep'),
         actions: [
@@ -193,7 +323,7 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
             tooltip: 'Settings',
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute(builder: (_) => const SettingsScreen()),
-            ),
+            ).then((_) => setState(() {})),
           ),
         ],
       ),
@@ -255,11 +385,29 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
 
   Widget _buildHome(BuildContext context, _HomeData data) {
     final theme = Theme.of(context);
+    final studyRepo = context.watch<StudyRepository>();
     final selectable = data.counts.keys.toSet();
-    final poolSize = _selected
-        .where(selectable.contains)
-        .fold<int>(0, (sum, slug) => sum + data.counts[slug]!);
-    final count = min(_questionCount, poolSize);
+
+    // Determine candidate question pool based on selected domain and difficulty
+    List<Question> candidatePool;
+    if (_selectedDomain == 'all') {
+      candidatePool = data.questions;
+    } else {
+      candidatePool =
+          data.questions.where((q) => q.domain == _selectedDomain).toList();
+    }
+
+    if (studyRepo.difficulty > 0) {
+      final diffFiltered = candidatePool
+          .where((q) => q.difficulty == studyRepo.difficulty)
+          .toList();
+      if (diffFiltered.isNotEmpty) {
+        candidatePool = diffFiltered;
+      }
+    }
+
+    final poolSize = candidatePool.length;
+    final count = min(studyRepo.questionCount, poolSize);
 
     return RefreshIndicator(
       onRefresh: _reload,
@@ -272,56 +420,88 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
           _studyFocusCard(context, data),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
-            child: Text('Pick your sections',
-                style: theme.textTheme.headlineSmall),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Select Practice Domain',
+                    style: theme.textTheme.headlineSmall),
+                const SizedBox(height: 4),
+                Text(
+                  'Choose an individual domain to focus on or select All Domains for a comprehensive exam mix.',
+                  style: theme.textTheme.bodySmall,
+                ),
+              ],
+            ),
           ),
+          RadioListTile<String>(
+            value: 'all',
+            groupValue: _selectedDomain,
+            title: const Text('All Domains (Comprehensive Practice)'),
+            subtitle: Text(
+                'Full FS exam cross-section · ${data.questions.length} questions available'),
+            secondary: const Icon(Icons.all_inclusive),
+            onChanged: (val) => setState(() => _selectedDomain = val ?? 'all'),
+          ),
+          const Divider(indent: 16, endIndent: 16),
           for (final domain in kDomains)
             if (selectable.contains(domain.slug))
-              CheckboxListTile(
+              RadioListTile<String>(
+                value: domain.slug,
+                groupValue: _selectedDomain,
                 secondary: Icon(domain.icon),
                 title: Text(domain.name),
                 subtitle: Text(
                     '${domain.blurb}\n${data.counts[domain.slug]} questions available'),
                 isThreeLine: true,
-                value: _selected.contains(domain.slug),
-                onChanged: (value) => setState(() {
-                  if (value == true) {
-                    _selected.add(domain.slug);
-                  } else {
-                    _selected.remove(domain.slug);
-                  }
-                }),
+                onChanged: (val) =>
+                    setState(() => _selectedDomain = val ?? 'all'),
               ),
           const Divider(height: 1),
           Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                Row(
-                  children: [
-                    const Text('Questions:'),
-                    Expanded(
-                      child: Slider(
-                        value: _questionCount.toDouble(),
-                        min: 5,
-                        max: 50,
-                        divisions: 9,
-                        label: '$_questionCount',
-                        onChanged: (v) =>
-                            setState(() => _questionCount = v.round()),
+                Container(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.surfaceContainerHighest
+                        .withOpacity(0.4),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: theme.colorScheme.outlineVariant),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.tune,
+                          size: 20, color: theme.colorScheme.primary),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          '${studyRepo.questionCount} questions · ${_difficultyLabel(studyRepo.difficulty)}',
+                          style: theme.textTheme.bodyMedium
+                              ?.copyWith(fontWeight: FontWeight.w500),
+                        ),
                       ),
-                    ),
-                    Text('$_questionCount'),
-                  ],
+                      TextButton(
+                        onPressed: () => Navigator.of(context)
+                            .push(
+                              MaterialPageRoute(
+                                  builder: (_) => const SettingsScreen()),
+                            )
+                            .then((_) => setState(() {})),
+                        child: const Text('Change in Settings'),
+                      ),
+                    ],
+                  ),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: 12),
                 SizedBox(
                   width: double.infinity,
                   child: FilledButton.icon(
                     icon: const Icon(Icons.play_arrow),
                     label: Text(
-                        'Start quiz ($count question${count == 1 ? '' : 's'})'),
-                    onPressed: _selected.isEmpty || poolSize == 0
+                        'Start Practice Quiz ($count question${count == 1 ? '' : 's'})'),
+                    onPressed: poolSize == 0
                         ? null
                         : () => _startQuiz(context, data, count),
                   ),
@@ -555,10 +735,23 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
 
   Future<void> _startQuiz(
       BuildContext context, _HomeData data, int count) async {
-    final pool = data.questions
-        .where((q) => _selected.contains(q.domain))
-        .toList()
-      ..shuffle(Random());
+    final studyRepo = context.read<StudyRepository>();
+    List<Question> pool;
+    if (_selectedDomain == 'all') {
+      pool = List<Question>.from(data.questions);
+    } else {
+      pool = data.questions.where((q) => q.domain == _selectedDomain).toList();
+    }
+
+    if (studyRepo.difficulty > 0) {
+      final diffFiltered =
+          pool.where((q) => q.difficulty == studyRepo.difficulty).toList();
+      if (diffFiltered.isNotEmpty) {
+        pool = diffFiltered;
+      }
+    }
+
+    pool.shuffle(Random());
     final questions = pool.take(count).toList();
 
     // Phase 3 seam: the freemium quota check lives behind Entitlements.
@@ -572,15 +765,15 @@ class _DomainPickerScreenState extends State<DomainPickerScreen> {
       return;
     }
 
-    final names = _selected.length == kDomains.length
-        ? 'Mixed review'
-        : _selected.map((s) => domainInfo(s).name).join(', ');
+    final title = _selectedDomain == 'all'
+        ? 'Comprehensive FS Practice'
+        : domainInfo(_selectedDomain).name;
     if (!context.mounted) return;
     await Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => QuizScreen(
           questions: questions,
-          title: names,
+          title: title,
           sessionKind: 'quiz',
           onAnswerLocked: _recordSrs,
         ),
